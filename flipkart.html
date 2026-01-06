@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        #Container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: azure;
+        }
+        h1{
+            color: white;
+        }
+
+        h2{
+            color:white;
+        }
+
+        #cart{
+            width: 200px;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid;
+            border-radius: 10px;
+            text-align: center;
+            background-color:brown
+
+        }
+        mark{
+            padding: 5px 10px;
+            
+        }
+
+        #search{
+            padding: 10px;
+            border-radius: 10px;
+            width: 400px;
+            margin: 5px;
+            color:azure
+
+        }
+
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+         <h1>Flipkart</h1>
+         <h2>Card<sup id="cartLength">0</sup></h2>
+         <h2>Total Bill: <span id="cartTotal">0</span></h2>
+         <input type="text"  id="search"  oninput="filterD()">
+   </center>
+    
+    <div id="Container">
+        
+    </div>
+
+  
+   <script src=".\flipkart.js"></script>
+</body>
+
+</html>
